@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from 'gatsby';
 import './index.scss';
 import { HeroSection } from '../components/HeroSection';
 import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -10,6 +11,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <p>Rainbow Devs</p>
       <Navbar />
       <HeroSection />
+      <Footer />
     </main>
   );
 };

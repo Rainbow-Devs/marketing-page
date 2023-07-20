@@ -1,0 +1,36 @@
+.join-us-container {
+  display: block;
+  align-content: center;
+  padding: 20px;
+  background-color: #daf5e7;
+  margin-bottom: 5rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-family: inter;
+}
+
+.join-us-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.join-us-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.join-slack-button {
+  background-color: #454e9e;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}/*# sourceMappingURL=JoinUs.css.map */

@@ -1,9 +1,11 @@
 .projects-container {
   display: flex;
   justify-content: center;
-  padding: 3rem;
+  padding: 20px;
   background-color: #eef2ff;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
+  max-width: 90%;
+  font-family: inter;
 }
 
 .image-container,

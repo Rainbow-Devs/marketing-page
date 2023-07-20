@@ -1,9 +1,11 @@
 .projects-container {
   display: flex;
   justify-content: center;
-  padding: 3rem;
-  background-color: #eef2ff;
-  margin-bottom: 5rem;
+  padding: 20px;
+  background-color: #eef2ff; // retain original color
+  margin: 5rem auto; // centralize the component with auto margins
+  max-width: 90%; // match max-width with join-us-container
+  font-family: inter;
 }
 
 .image-container,

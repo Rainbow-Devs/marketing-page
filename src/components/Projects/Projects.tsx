@@ -18,6 +18,10 @@ const Projects: React.FC = () => {
           <li>Reminders</li>
           <li>Calorie counter</li>
         </ul>
+        <div className="button-container">
+          <button className="custom-button visit">Visit WellPath</button>
+          <button className="custom-button code">View the Code</button>
+        </div>
       </div>
       <div className="image-container">
         <img src={laptopMock} alt="Laptop Mockup" />

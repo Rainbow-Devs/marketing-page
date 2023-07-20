@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./Navbar.scss";
-import rainbowLogo from "./rainbow-dev-2.png"
+import rainbowLogo from "../../images/rainbow-dev-2.png"
 
 type Props = {};
 

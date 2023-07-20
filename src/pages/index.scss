@@ -1,8 +1,4 @@
 @import "./reset.scss";
 @import "../components/Navbar/Navbar.scss";
 @import "../components/Footer/Footer.scss";
-
-:root {
-  width: 100% auto;
-  height: 100% auto;
-}
+@import "../components/About/About.scss";

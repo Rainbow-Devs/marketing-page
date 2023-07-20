@@ -1,7 +1,11 @@
-.about-container {
+.projects-container {
   display: flex;
   justify-content: space-between;
   padding: 0 5rem;
+  background-color: #eef2ff;
+  padding: 3.125rem 4.375rem;
+  margin-bottom: 5rem;
+  ;
 }
 
 .image-container,
@@ -14,19 +18,14 @@
   height: auto;
 }
 
-.image-container h1 {
-  font-size: 2rem;
-  font-family: inter;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .text-container {
-  padding: 20px;
-  max-width: 28.125rem;
-  max-height: 21.875rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.text-container h1,
 .text-container h2 {
   font-size: 2rem;
   font-family: inter;
@@ -40,8 +39,12 @@
   margin-bottom: 20px;
 }
 
+.text-container ul {
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 768px) {
-  .about-container {
+  .projects-container {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;

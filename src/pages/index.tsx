@@ -4,6 +4,7 @@ import './index.scss';
 import { HeroSection } from '../components/HeroSection';
 import { Navbar } from '../components/Navbar';
 import { About } from '../components/About';
+import { Projects } from '../components/Projects';
 import { Footer } from '../components/Footer';
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -12,6 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Navbar />
       <HeroSection />
       <About />
+      <Projects />
       <Footer email="rainbowdevs22@gmail.com"/>
     </main>
   );

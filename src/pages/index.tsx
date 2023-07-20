@@ -8,10 +8,9 @@ import { Footer } from '../components/Footer';
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
-      <p>Rainbow Devs</p>
       <Navbar />
       <HeroSection />
-      <Footer />
+      <Footer email="rainbowdevs22@gmail.com"/>
     </main>
   );
 };

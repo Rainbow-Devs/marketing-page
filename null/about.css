@@ -1,51 +1,98 @@
 .about-container {
   display: flex;
-  justify-content: space-between;
-  padding: 0 5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 90%;
+  border: none;
 }
-
-.image-container,
-.text-container {
-  flex: 1;
-}
-
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.image-container h1 {
-  font-size: 2rem;
-  font-family: inter;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.text-container {
-  padding: 20px;
-  max-width: 28.125rem;
-  max-height: 21.875rem;
-}
-
-.text-container h2 {
-  font-size: 2rem;
-  font-family: inter;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.text-container p {
-  font-size: 1rem;
-  font-family: inter;
-  margin-bottom: 20px;
-}
-
 @media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    align-items: center;
     padding: 0 1rem;
+  }
+}
+.about-container .image-container,
+.about-container .text-container {
+  flex: 1;
+  border: none;
+  padding: 0 0 0 2rem;
+  max-width: 31.25rem;
+}
+.about-container .image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -moz-min-content;
+  width: min-content;
+}
+.about-container .image-container img {
+  max-width: auto;
+  height: auto;
+  border: none;
+}
+.about-container .image-container h1 {
+  font-size: 2.5rem;
+  font-family: inter;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+}
+.about-container h1 {
+  font-size: 2.5rem;
+  font-family: inter;
+  font-weight: bold;
+  border: none;
+}
+
+.text-container {
+  max-width: 28.125rem;
+  max-height: 21.875rem;
+  border: none;
+}
+.text-container h2 {
+  font-size: 2.5rem;
+  font-family: inter;
+  font-weight: bold;
+  border: none;
+}
+.text-container p {
+  font-size: 1.25rem;
+  font-family: inter;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  border: none;
+}
+@media screen and (max-width: 393px) {
+  .text-container h2 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 393px) and (max-width: 600px) {
+  .text-container h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 393px) and (min-width: 1200px) {
+  .text-container h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .text-container p {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 393px) and (max-width: 600px) {
+  .text-container p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 393px) and (min-width: 1200px) {
+  .text-container p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=about.css.map */

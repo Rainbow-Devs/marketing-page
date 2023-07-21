@@ -1,16 +1,17 @@
 .projects-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
   background-color: #eef2ff;
-  margin: 5rem auto;
-  max-width: 90%;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 80%;
   font-family: inter;
 }
 
 .image-container,
 .text-container {
   flex: 1;
+  max-width: 31.25rem;
 }
 
 .image-container img {
@@ -20,6 +21,7 @@
 
 .text-container {
   padding: 20px;
+  line-height: 1.2;
 }
 
 .text-container h1,
@@ -63,7 +65,7 @@
 .custom-button.code {
   background-color: #eef2ff;
   color: #454e9e;
-  border: 2px solid #008cba;
+  border: 2px solid #454e9e;
 }
 
 @media screen and (max-width: 768px) {

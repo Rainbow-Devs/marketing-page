@@ -11,7 +11,7 @@ body {
 }
 nav {
   display: flex;
-  width: auto;
+  width: 100%;
   max-height: 100px;
   padding: 10px;
   text-align: center;
@@ -60,13 +60,16 @@ nav {
   justify-content: center;
   width: 50%;
   opacity: 1;
+  font-size: 1.25rem;
 }
 
 .links a {
   text-decoration: none;
   color: #333;
   transition: color 0.3s ease;
+  padding: auto;
 }
 .links a:hover {
-  color: #007bff;
+  color: #454e9e;
+  border-bottom: 2px solid #454e9e;
 }/*# sourceMappingURL=Navbar.css.map */

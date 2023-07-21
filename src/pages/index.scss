@@ -3,4 +3,48 @@
 @import "../components/Footer/Footer.scss";
 @import "../components/About/About.scss";
 @import "../components/Projects/Projects.scss";
-@import "../components/JoinUs/JoinUs.scss"
+@import "../components/JoinUs/JoinUs.scss";
+
+// Define global variables
+$primary-font: inter;
+$primary-font-size: 1.25rem;
+$secondary-font-size: 2.5rem;
+$debug-border: none; // Set this to 'none' to turn off the borders.
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: $primary-font;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+// Styling for links
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #007bff;
+  }
+}
+
+// Styling for all images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Styling for sticky footers
+footer {
+  position: -webkit-sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eef2ff;
+  padding: 10px;
+  text-align: center;
+}

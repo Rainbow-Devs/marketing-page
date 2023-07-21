@@ -10,11 +10,34 @@ const Footer: React.FC<FooterProps> = ({ email }) => {
   return (
     <div className="footer">
       <div className="footer-links">
-        <img src={github} alt="github-logo" />
-        <img src={linkedin} alt="linkedin-logo" />
+        <img
+          src={github}
+          alt="github-logo"
+          onClick={() => {
+            window.open(
+              "https://github.com/Rainbow-Devs",
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }}
+        />
+
+        <img
+          src={linkedin}
+          alt="linkedin-logo"
+          onClick={() => {
+            window.open(
+              "https://www.linkedin.com/company/rainbow-devs/",
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }}
+        />
       </div>
       <p id="contact-info">Contact</p>
-      <p>{email}</p>
+      <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+        {email}
+      </a>
       <p>© 2023 Rainbow Devs. All rights reserved</p>
     </div>
   );

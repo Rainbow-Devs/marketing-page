@@ -1,27 +1,32 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./Navbar.scss";
-import rainbowLogo from "../../images/rainbow-devs-logo.jpg";
+
 
 type Props = {};
 
 const Navbar: React.FC<Props> = () => {
   return (
-    <nav>
+    <nav className="navbar-container">
       <div className="logo">
         <div className="logo-content">
-          <img src={rainbowLogo} alt="rainbow-logo" />
           <div className="text">
-            <span className="rainbow">Rainbow</span>
-            <span className="devs">Devs</span>
+            <span className="text__rainbow">Rainbow</span>
+            <span className="text__devs">Devs</span>
           </div>
         </div>
       </div>
 
       <div className="links">
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/join-us">Join Us</Link>
+        <Link to="/about" className="links__link">
+          About
+        </Link>
+        <Link to="/projects" className="links__link">
+          Projects
+        </Link>
+        <Link to="/join-us" className="links__link">
+          Join Us
+        </Link>
       </div>
     </nav>
   );

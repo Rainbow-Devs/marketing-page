@@ -17,7 +17,6 @@
 
 .about-section {
   border: var(--debug-border);
-
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -35,4 +34,4 @@
   flex: 1; /* Take half of the available space in the container */
 }
 
-/* Add additional styles as needed */
+/* Add additional styles as needed *//*# sourceMappingURL=HomeBody.css.map */

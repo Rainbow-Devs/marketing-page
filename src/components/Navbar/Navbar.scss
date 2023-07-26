@@ -7,53 +7,46 @@
   --navbar-height: 5rem;
   --font-size-paragraph: 1rem;
   --font-weight-normal: normal;
+  --nabvar-opacity: .8;
+  --ff-global: "Inter", sans-serif;
 }
 
-/* Navbar Container */
+*{
+  font-family: var(--ff-global);
+}
+
+/* Navbar */
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-  width: 100vw;
-  height: var(--navbar-height);
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    .75 ); /* Apply opacity based on scroll */
+  backdrop-filter: blur(
+    calc(var(--navbar-opacity) * 10px)
+  ); /* Adjust blur intensity based on scroll */
   position: fixed;
   top: 0;
   left: 0;
-  font-family: "Inter", sans-serif;
-  border: 1px solid black;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index to ensure it appears on top */
+  transition: background-color 0.3s ease-in-out,
+    backdrop-filter 0.3s ease-in-out;
 }
-
-/* Logo Section */
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-  width: 100vw;
-  height: var(--navbar-height);
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-family: "Inter", sans-serif;
-  border: 1px solid black;
-}
-
 .logo {
   display: flex;
   align-items: center;
   height: 100%;
   margin-left: 3rem;
-
 }
 
 .logo-content {
   display: flex;
   align-items: center;
-
 }
 
 /* Wordmark Section */
@@ -82,7 +75,6 @@
   margin-right: 30rem;
   margin-left: 3rem;
 }
-
 
 .links__link {
   text-decoration: none;

@@ -45,22 +45,24 @@
 .logo {
   display: flex;
   align-items: center;
-  border: 1px solid black;
   height: 100%;
   margin-left: 3rem;
+
 }
 
 .logo-content {
   display: flex;
   align-items: center;
+
 }
 
 /* Wordmark Section */
 .text {
   display: flex;
   flex-direction: column;
-  background-color: lightcoral;
-  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 .text__rainbow {
@@ -78,14 +80,16 @@
   display: flex;
   align-items: center;
   margin-right: 30rem;
+  margin-left: 3rem;
 }
+
 
 .links__link {
   text-decoration: none;
   color: var(--primary-text-color);
   font-size: var(--font-size-paragraph);
   font-weight: var(--font-weight-normal);
-  margin-right: 25px;
+  margin-right: 2rem;
 }
 
 .links__link:last-child {
@@ -96,17 +100,21 @@
   color: #454e9e; /* Change to the desired hover color */
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .links__link::before {
   content: "";
+  position: absolute;
+  bottom: -5px;
   left: 0;
   width: 0;
-  height: 2px;
-  background-color: #007bff; /* Change to the desired underline color */
-  transition: width 0.3s ease;
+  height: 1px;
+  transition: 0.1s ease-in-out;
+  background-color: #454e9e; /* Change to the desired hover color */
 }
 
 .links__link:hover::before {
-  width: auto;
+  width: 100%;
+  border-bottom: 1px solid black;
 }

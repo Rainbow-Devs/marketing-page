@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
+import { Logo } from "../../components/Logo/logo"; // Import the Logo component
 import "./Navbar.scss";
-
 
 type Props = {};
 
@@ -10,6 +10,8 @@ const Navbar: React.FC<Props> = () => {
     <nav className="navbar-container">
       <div className="logo">
         <div className="logo-content">
+          {/* Render the Logo component here */}
+          <Logo />
           <div className="text">
             <span className="text__rainbow">Rainbow</span>
             <span className="text__devs">Devs</span>

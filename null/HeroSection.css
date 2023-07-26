@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* HeroSection.scss */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+  margin-top: 5rem;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  border: 1px solid red;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.hero-content__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=HeroSection.css.map */

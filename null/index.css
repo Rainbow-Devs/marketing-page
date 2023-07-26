@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,61 +54,153 @@ table {
   border-spacing: 0;
 }
 
+/* Custom CSS Variables */
+:root {
+  --primary-background-color: white;
+  --primary-text-color: black;
+  --navbar-height: 5rem;
+  --font-size-paragraph: 1rem;
+  --font-weight-normal: normal;
+  --nabvar-opacity: .8;
+  --ff-global: "Inter", sans-serif;
+}
+
+* {
+  font-family: var(--ff-global);
+}
+
+/* Navbar */
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white; /* White background */
-  color: black; /* Black text color */
-  height: 6.25rem;
-  width: 100vw; /* Span the entire viewport width */
-  padding: 0 2rem; /* Add some padding to the navbar */
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  background-color: rgba(255, 255, 255, 0.75); /* Apply opacity based on scroll */
+  -webkit-backdrop-filter: blur(calc(var(--navbar-opacity) * 10px));
+          backdrop-filter: blur(calc(var(--navbar-opacity) * 10px)); /* Adjust blur intensity based on scroll */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index to ensure it appears on top */
+  transition: background-color 0.3s ease-in-out, -webkit-backdrop-filter 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, -webkit-backdrop-filter 0.3s ease-in-out;
 }
 
-.navbar-logo {
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 3rem;
+}
+
+.logo-content {
   display: flex;
   align-items: center;
 }
 
-.navbar-logo img {
-  height: 4rem; /* Adjust the height as per your logo size */
-  margin-right: 1rem;
-}
-
-.navbar-wordmark {
+/* Wordmark Section */
+.text {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
-.t-rainbow {
-  font-size: 1.8rem; /* Replace with your desired font size for "Rainbow" */
+.text__rainbow {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-normal);
 }
 
-.t-devs {
-  font-size: 1.4rem; /* Replace with your desired font size for "Devs" */
+.text__devs {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-normal);
 }
 
-.navbar-links {
+/* Links Section */
+.links {
   display: flex;
   align-items: center;
+  margin-right: 30rem;
+  margin-left: 3rem;
 }
 
-.navbar-links ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+.links__link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-normal);
+  margin-right: 2rem;
 }
 
-.navbar-links li {
-  margin-right: 1.5rem;
-}
-
-.navbar-links li:last-child {
+.links__link:last-child {
   margin-right: 0;
 }
 
-.navbar-links a {
-  text-decoration: none;
-  font-size: 1.6rem; /* Replace with your desired font size for links */
+.links__link:hover {
+  color: #454e9e; /* Change to the desired hover color */
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.links__link::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.1s ease-in-out;
+  background-color: #454e9e; /* Change to the desired hover color */
+}
+
+.links__link:hover::before {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+/* HeroSection.scss */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  position: relative;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  border: 1px solid red;
+  width: 100%;
+  height: 33rem;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero-image {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.hero-content__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=index.css.map */

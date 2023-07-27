@@ -1,37 +1,165 @@
 :root {
-  --debug-border: 1px solid red;
+  --gap-size: 2rem;
+  --section-padding: 1rem 2rem;
+  --section-width: 100%;
+  --section-margin: 1rem 3rem;
+  --button-padding: 0.5rem 1rem;
+  --project-bg-color: #eef2ff;
+  --visit-wellpath-btn-color: #454e9e;
 }
 
 .homepage-body-container {
   display: flex;
-  border: var(--debug-border);
-  height: auto;
-  margin: 0 auto;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5rem;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem;
+  margin: 0 10%;
+  gap: var(--gap-size);
 }
 
 .about-section {
-  border: var(--debug-border);
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  align-items: flex-start;
+  gap: var(--gap-size);
 }
 
 .about-image {
-  flex: 1; /* Take half of the available space in the container */
+  flex: 1;
+  margin-top: 1rem;
 }
 
 .about-image img {
-  width: 100%; /* Make the image take full width of its container */
+  width: 100%;
 }
 
 .about-content {
-  flex: 1; /* Take half of the available space in the container */
+  flex: 1;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
 }
 
-/* Add additional styles as needed *//*# sourceMappingURL=HomeBody.css.map */
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-head {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-section {
+  display: flex;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  background-color: var(--project-bg-color);
+  line-height: 1.5rem;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.left {
+  gap: var(--gap-size);
+}
+
+.left h2,
+.right h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.left h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.left h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  list-style: disc;
+  line-height: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.visit-wellpath-btn {
+  outline: none;
+  border: 2px solid var(--visit-wellpath-btn-color);
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
+  padding: var(--button-padding);
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.view-the-code-btn {
+  background-color: var(--project-bg-color);
+  color: var(--visit-wellpath-btn-color);
+  padding: var(--button-padding);
+  outline: none;
+  border: 2px solid var(--visit-wellpath-btn-color);
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.join-us-section {
+  background-color: #daf5e7;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: var(--section-padding);
+  border-radius: 5px;
+  line-height: 1.5rem;
+}
+
+.join-us-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.join-us-btn {
+  outline: none;
+  border: 2px solid var(--visit-wellpath-btn-color);
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
+  padding: var(--button-padding);
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=HomeBody.css.map */

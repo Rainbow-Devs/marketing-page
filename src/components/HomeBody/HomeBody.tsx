@@ -1,23 +1,23 @@
 import React from "react";
 import "./HomeBody.scss";
 import { AboutImage } from "../AboutImage/AboutImage";
+import { ProjectImage } from "../ProjectImage/ProjectImage";
 
 const HomeBody = () => {
   return (
     <div className="homepage-body-container">
       <div className="about-section">
-        {/* Left column - Image */}
         <div className="about-image">
           <AboutImage />
         </div>
-        {/* Right column */}
         <div className="about-content">
           <h2>About</h2>
           <p>
             We are a vibrant and inclusive group of coding enthusiasts dedicated
             to honing our skills, collaborating, and exploring the colorful
-            world of software development.{" "}
+            world of software development.
           </p>
+          <br />
           <p>
             Whether you're a seasoned professional or just starting your coding
             journey, Rainbow Devs offers a supportive environment where you can
@@ -26,17 +26,48 @@ const HomeBody = () => {
           </p>
         </div>
       </div>
+      <h2 className="project-head">Projects</h2>
       <div className="projects-section">
-        <p>Projects</p>
+        <div className="left">
+          <div className="content-left">
+            <h3>WellPath</h3>
+            <p>
+              Say goodbye to a million different fitness apps and hello to
+              WellPath, your one-stop-shop health and wellness tracker. Keep
+              track of your physical and mental health all in one place.{" "}
+            </p>
 
-        {/* Content for the Projects section goes here */}
-        {/* You can add text, images, or any other components */}
+            <h4>Features</h4>
+            <ul>
+              <li>Fitness Log</li>
+              <li>Reminders</li>
+              <li>Calorie Counter</li>
+            </ul>
+
+            <div className="buttons">
+              <button className="visit-wellpath-btn">Visit WellPath</button>
+              <button className="view-the-code-btn">View the code</button>
+            </div>
+          </div>
+        </div>
+        <div className="right">
+          <div className="content-right">
+            <ProjectImage />
+          </div>
+        </div>
       </div>
       <div className="join-us-section">
-        <p>Join Us</p>
-
-        {/* Content for the Join Us section goes here */}
-        {/* You can add text, images, or any other components */}
+        <div className="text-container">
+          <h2>Join Us</h2>
+          <p>
+            Do you want to gain more technical experience, collaborate across
+            disciplines, and work in an agile environment? We’re looking for
+            designers, developers, data science, and devops to join the team! Once
+            you join our Slack, you’ll have access to our resources and be able to
+            contribute right away.
+          </p>
+          <button className="join-us-btn">Join Our Slack</button>
+        </div>
       </div>
     </div>
   );

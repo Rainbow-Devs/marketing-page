@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import { Logo } from "../../components/Logo/logo"; // Import the Logo component
 import "./Navbar.scss";
@@ -28,7 +26,6 @@ const Navbar: React.FC<Props> = () => {
     <nav className="navbar-container">
       <div className="logo">
         <div className="logo-content">
-          {/* Render the Logo component here */}
           <Logo />
           <div className="text">
             <span className="text__rainbow">Rainbow</span>
@@ -38,13 +35,13 @@ const Navbar: React.FC<Props> = () => {
       </div>
 
       <div className="links">
-        <Link to="/about" className="links__link">
+        <Link to="#about" className="links__link">
           About
         </Link>
-        <Link to="/projects" className="links__link">
+        <Link to="#projects" className="links__link">
           Projects
         </Link>
-        <Link to="/join-us" className="links__link">
+        <Link to="#join-us" className="links__link">
           Join Us
         </Link>
       </div>

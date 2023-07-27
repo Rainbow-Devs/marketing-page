@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HomeBody.scss";
 import { AboutImage } from "../AboutImage/AboutImage";
 import { ProjectImage } from "../ProjectImage/ProjectImage";
 
 const HomeBody = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.scrollY > window.innerHeight / 5) {
+      setShowScroll(true);
+    } else if (showScroll && window.scrollY <= window.innerHeight / 5) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop);
+    return () => window.removeEventListener("scroll", checkScrollTop);
+  }, []);
+
   return (
     <div className="homepage-body-container">
-      <div className="about-section">
+      <div id="about" className="about-section">
         <div className="about-image">
           <AboutImage />
         </div>
@@ -27,7 +46,7 @@ const HomeBody = () => {
         </div>
       </div>
       <h2 className="project-head">Projects</h2>
-      <div className="projects-section">
+      <div id="projects" className="projects-section">
         <div className="left">
           <div className="content-left">
             <h3>WellPath</h3>
@@ -56,19 +75,26 @@ const HomeBody = () => {
           </div>
         </div>
       </div>
-      <div className="join-us-section">
+      <div id="join-us" className="join-us-section">
         <div className="text-container">
           <h2>Join Us</h2>
           <p>
             Do you want to gain more technical experience, collaborate across
             disciplines, and work in an agile environment? We’re looking for
-            designers, developers, data science, and devops to join the team! Once
-            you join our Slack, you’ll have access to our resources and be able to
-            contribute right away.
+            designers, developers, data science, and devops to join the team!
+            Once you join our Slack, you’ll have access to our resources and be
+            able to contribute right away.
           </p>
           <button className="join-us-btn">Join Our Slack</button>
         </div>
       </div>
+      <button
+        className="scrollTop"
+        onClick={scrollTop}
+        style={{ display: showScroll ? "flex" : "none" }}
+      >
+        Back to top
+      </button>
     </div>
   );
 };

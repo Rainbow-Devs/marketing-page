@@ -7,14 +7,27 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <p>
-          <div className="icon-container">
+        <div className="icon-container">
+          <a
+            href="https://www.linkedin.com/company/rainbow-devs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Linkedin />
+          </a>
+          <a
+            href="https://github.com/Rainbow-Devs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github />
-          </div>
-          <h2>Contact</h2>
-          <p>rainbowdevs22@gmail.com</p>
-          <br />
+          </a>
+        </div>
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:rainbowdevs22@gmail.com">rainbowdevs22@gmail.com</a>
+        </p>
+        <p>
           &copy; {new Date().getFullYear()} Rainbow Devs. All rights reserved.
         </p>
       </div>

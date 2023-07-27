@@ -4,12 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   position: relative;
   flex-direction: column;
   font-family: "Inter", sans-serif;
   width: 100%;
-  height: 33rem;
   justify-content: center;
   align-items: center;
   z-index: -1;
@@ -39,4 +37,11 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+/* Mobile devices (portrait tablets and large phones, less than 768px) */
+@media only screen and (max-width: 767px) {
+  .hero-container {
+    display: none;
+  }
 }/*# sourceMappingURL=HeroSection.css.map */

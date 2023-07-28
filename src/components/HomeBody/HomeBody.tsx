@@ -6,12 +6,14 @@ import { ProjectImage } from "../ProjectImage/ProjectImage";
 const HomeBody = () => {
   const [showScroll, setShowScroll] = useState(false);
 
+
   const checkScrollTop = () => {
-    if (!showScroll && window.scrollY > window.innerHeight / 5) {
+    if (!showScroll && window.scrollY > 10) {
       setShowScroll(true);
-    } else if (showScroll && window.scrollY <= window.innerHeight / 5) {
-      setShowScroll(false);
+    } else if (showScroll && window.scrollY <= 100) {
+      setShowScroll(true);
     }
+    else {setShowScroll(false)}
   };
 
   const scrollTop = () => {

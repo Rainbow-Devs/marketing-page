@@ -3,7 +3,7 @@
   --section-padding: 1rem 2rem;
   --section-width: 100%;
   --section-margin: 1rem 3rem;
-  --button-padding: 0 1rem;
+  --button-padding: .5rem 1rem;
   --project-bg-color: #eef2ff;
   --visit-wellpath-btn-color: #454e9e;
 }

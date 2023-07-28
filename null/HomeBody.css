@@ -3,11 +3,14 @@
   --section-padding: 1rem 2rem;
   --section-width: 100%;
   --section-margin: 1rem 3rem;
-  --button-padding: .5rem 1rem;
+  --button-padding: 0.5rem 1rem;
   --project-bg-color: #eef2ff;
   --visit-wellpath-btn-color: #454e9e;
 }
 
+/*============================================*/
+/* DESKTOP STYLES > 768px*/
+/*============================================*/
 .homepage-body-container {
   display: flex;
   flex-direction: column;
@@ -163,7 +166,9 @@
   width: fit-content;
 }
 
-/* Mobile devices (portrait tablets and large phones, less than 768px) */
+/*============================================*/
+/* Mobile devices < 768px*/
+/*============================================*/
 @media only screen and (max-width: 768px) {
   .about-section,
   .projects-section,
@@ -249,7 +254,7 @@
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-  width: 80px;
+  width: auto;
   height: 40px;
   background-color: var(--visit-wellpath-btn-color);
   color: white;
@@ -257,7 +262,7 @@
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  padding: 10px;
+  padding: auto;
   font-size: 1rem;
   z-index: 1000;
   display: flex;

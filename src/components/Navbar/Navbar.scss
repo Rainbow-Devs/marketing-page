@@ -32,7 +32,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 500px;
+  max-width: fit-content;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out,
     backdrop-filter 0.3s ease-in-out;
@@ -42,7 +42,7 @@
 .logo {
   display: flex;
   height: 100%;
-  margin-left: 1rem;
+  margin: 0 1rem;
   border-right: 1px solid #454e9e;
   padding-right: 1rem;
 }
@@ -64,7 +64,7 @@
 .text__rainbow,
 .text__devs {
   font-size: var(--font-size-paragraph);
-  font-weight: var(--font-weight-normal);
+  font-weight: bold;
 }
 
 /* Links Section */
@@ -82,7 +82,9 @@
   padding: 1rem 2rem;
   color: var(--primary-text-color);
   font-size: var(--font-size-paragraph);
-  font-weight: normal;
+  font-weight: bold;
+  width: fit-content;
+  white-space: nowrap;
 }
 
 .links__link:hover {

@@ -9,9 +9,8 @@ function HeroSection({}: Props) {
     <div className="hero-container">
       <HeroImage />
       <div className="hero-content">
-        <h1 className="hero-content__title">Rainbow Devs</h1>
         <p className="hero-content__description">
-          A community of LGBTQ+ developers
+          Rainbow Devs is a community of LGBTQ+ developers
         </p>
       </div>
     </div>

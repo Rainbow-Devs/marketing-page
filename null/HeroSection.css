@@ -2,39 +2,43 @@
 /* HeroSection.scss */
 .hero-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   position: relative;
   flex-direction: column;
   font-family: "Inter", sans-serif;
   width: 100%;
+  height: 60vh;
   justify-content: center;
   align-items: center;
   z-index: -1;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-image {
   -o-object-position: center;
      object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-content {
   position: absolute;
-  top: 50%;
+  bottom: 0; /* Change this */
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100vw;
+  transform: translate(-50%, 0); /* Change this */
   color: rgb(0, 0, 0);
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 10px;
-  font-weight: normal;
+  font-weight: bold;
+  padding: 1rem;
+  white-space: nowrap; /* Prevents text from breaking into new lines */
 }
 
 .hero-content__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }

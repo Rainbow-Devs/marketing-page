@@ -51,7 +51,7 @@ const HomeBody = () => {
       <div id="projects" className="projects-section">
         <div className="left">
           <div className="content-left">
-            <h3>WellPath</h3>
+            <h3 className="wellpath">WellPath</h3>
             <p>
               Say goodbye to a million different fitness apps and hello to
               WellPath, your one-stop-shop health and wellness tracker. Keep

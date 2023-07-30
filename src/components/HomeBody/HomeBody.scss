@@ -4,12 +4,11 @@
   --section-width: 100%;
   --section-margin: 1rem 3rem;
   --button-padding: 0.5rem 1rem;
+  --button-margin: 0.5rem;
   --project-bg-color: #eef2ff;
   --visit-wellpath-btn-color: #454e9e;
 }
-/*============================================*/
-/* DESKTOP STYLES > 768px*/
-/*============================================*/
+
 .homepage-body-container {
   display: flex;
   flex-direction: column;
@@ -82,7 +81,7 @@
 .left h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .left h4 {
@@ -105,35 +104,33 @@
   font-size: 0.9rem;
 }
 
-.visit-wellpath-btn {
+.visit-wellpath-btn,
+.view-the-code-btn,
+.join-us-btn {
   outline: none;
   border: 2px solid var(--visit-wellpath-btn-color);
-  background-color: var(--visit-wellpath-btn-color);
-  color: white;
   padding: var(--button-padding);
   border-radius: 5px;
-  margin-right: 1rem;
+  margin: var(--button-margin);
+}
+
+.visit-wellpath-btn {
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
 }
 
 .view-the-code-btn {
   background-color: var(--project-bg-color);
   color: var(--visit-wellpath-btn-color);
-  padding: var(--button-padding);
-  outline: none;
-  border: 2px solid var(--visit-wellpath-btn-color);
-  border-radius: 5px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
 }
 
 .join-us-section {
   background-color: #daf5e7;
-
   display: flex;
   flex-direction: column;
   align-items: left;
   padding: var(--section-padding);
+  padding-right: 0;
   border-radius: 5px;
   line-height: 1.5rem;
 }
@@ -144,6 +141,17 @@
   margin-bottom: 1rem;
 }
 
+.join-us-btn {
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
+  padding: var(--button-padding);
+  border-radius: 5px;
+  margin: var(--button-margin);
+  text-align: center;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -151,111 +159,6 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 80%;
-}
-
-.join-us-btn {
-  outline: none;
-  border: 2px solid var(--visit-wellpath-btn-color);
-  background-color: var(--visit-wellpath-btn-color);
-  color: white;
-  padding: var(--button-padding);
-  border-radius: 5px;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  width: fit-content;
-}
-/*============================================*/
-/* Mobile devices < 768px*/
-/*============================================*/
-@media only screen and (max-width: 768px) {
-  .about-section,
-  .projects-section,
-  .join-us-section,
-  h1 {
-    flex-direction: column;
-    border-radius: 22px;
-    justify-content: center;
-  }
-
-  .left,
-  .right,
-  .about-image,
-  .about-content {
-    width: 100%;
-  }
-
-  .projects-section .left {
-    order: 2;
-  }
-
-  .projects-section .right {
-    order: 1;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
-  .visit-wellpath-btn {
-    display: fl;
-    outline: none;
-    border: 2px solid var(--visit-wellpath-btn-color);
-    background-color: var(--visit-wellpath-btn-color);
-    color: white;
-    padding: auto;
-    border-radius: 5px;
-    margin-right: 1rem;
-  }
-  .view-the-code-btn {
-    margin: 0;
-    padding: 0.5rem;
-  }
-
-  .navbar-container {
-    border-radius: 0;
-    margin: 0 auto;
-    top: 5;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  /* Add these lines */
-  .about-content h2,
-  .join-us-section h2 {
-    text-align: center; /* Center align the headings */
-  }
-
-  .project-head {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-  }
-
-  .about-content p,
-  .left p,
-  .text-container p {
-    text-align: left; /* Left align the body text */
-  }
-}
-
-.join-us-btn {
-  display: flex;
-  outline: none;
-  border: 2px solid var(--visit-wellpath-btn-color);
-  background-color: var(--visit-wellpath-btn-color);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  width: auto;
-}
-
-.text-container {
-  display: flex;
-  align-items: center;
-  width: auto;
-  justify-content: center;
 }
 
 .scrollTop {
@@ -271,10 +174,111 @@
   text-align: center;
   cursor: pointer;
   padding: auto;
-  font-size: .8rem;
+  font-size: 0.8rem;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section,
+  .projects-section,
+  .join-us-section,
+  h1 {
+    flex-direction: column;
+    border-radius: 22px;
+  }
+
+  .left,
+  .right,
+  .about-image,
+  .about-content {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .projects-section .left {
+    order: 2;
+  }
+
+  .projects-section .right {
+    order: 1;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .visit-wellpath-btn {
+    display: flex;
+    outline: none;
+    border: 2px solid var(--visit-wellpath-btn-color);
+    background-color: var(--visit-wellpath-btn-color);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  .view-the-code-btn {
+    white-space: nowrap;
+  }
+
+  .join-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--section-padding);
+    border-radius: 5px;
+    line-height: 1.5rem;
+  }
+
+  .join-us-btn {
+    position: relative;
+    outline: none;
+    border: 2px solid var(--visit-wellpath-btn-color);
+    background-color: var(--visit-wellpath-btn-color);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    object-fit: contain;
+  }
+
+  .navbar-container {
+    border-radius: 0;
+    margin: 0 auto;
+    top: 5;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .about-content h2,
+  .join-us-section h2 {
+    text-align: center; /* Center align the headings */
+  }
+
+  .project-head {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-content p,
+  .left p,
+  .text-container p {
+    text-align: left; /* Left align the body text */
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .scrollTop {
+    display: none !important;
+  }
 }

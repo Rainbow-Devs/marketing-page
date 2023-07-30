@@ -123,6 +123,7 @@
 
 .visit-wellpath-btn:hover {
   background-color: black;
+  border: 2px solid black;
   color: white;
   font-weight: bold;
 }
@@ -137,6 +138,8 @@
 .view-the-code-btn:hover {
   background-color: black;
   color: white;
+  border: 2px solid black;
+  font-weight: bold;
 }
 
 .join-us-section {
@@ -172,6 +175,7 @@
   background-color: black;
   color: white;
   font-weight: bold;
+  border: 2px solid black;
 }
 
 .text-container {
@@ -191,12 +195,13 @@
   height: 40px;
   background-color: var(--visit-wellpath-btn-color);
   color: white;
-  border: none;
+  border: 2px solid var(--visit-wellpath-btn-color);
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
   padding: auto;
   font-size: 0.8rem;
+  font-weight: bold;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -254,11 +259,20 @@
     flex-direction: column;
     align-items: center;
     padding: var(--section-padding);
-    border-radius: 5px;
+    border-radius: 22px;
     line-height: 1.5rem;
   }
 
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
   .join-us-btn {
+    margin-top: 1rem;
     position: relative;
     outline: none;
     border: 2px solid var(--visit-wellpath-btn-color);
@@ -297,6 +311,13 @@
     font-size: 0.9rem;
     line-height: 1.2rem;
   }
+}
+
+.scrollTop:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
 }
 
 @media only screen and (max-width: 767px) {

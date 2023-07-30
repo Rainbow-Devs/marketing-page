@@ -117,11 +117,26 @@
 .visit-wellpath-btn {
   background-color: var(--visit-wellpath-btn-color);
   color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.visit-wellpath-btn:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .view-the-code-btn {
   background-color: var(--project-bg-color);
   color: var(--visit-wellpath-btn-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.view-the-code-btn:hover {
+  background-color: black;
+  color: white;
 }
 
 .join-us-section {
@@ -130,7 +145,6 @@
   flex-direction: column;
   align-items: left;
   padding: var(--section-padding);
-  padding-right: 0;
   border-radius: 5px;
   line-height: 1.5rem;
 }
@@ -150,6 +164,14 @@
   text-align: center;
   text-decoration: none;
   max-width: fit-content;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.join-us-btn:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .text-container {

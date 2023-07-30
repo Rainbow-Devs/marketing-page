@@ -6,14 +6,14 @@ import { ProjectImage } from "../ProjectImage/ProjectImage";
 const HomeBody = () => {
   const [showScroll, setShowScroll] = useState(false);
 
-
   const checkScrollTop = () => {
     if (!showScroll && window.scrollY > 10) {
       setShowScroll(true);
     } else if (showScroll && window.scrollY <= 100) {
       setShowScroll(true);
+    } else {
+      setShowScroll(false);
     }
-    else {setShowScroll(false)}
   };
 
   const scrollTop = () => {
@@ -67,7 +67,7 @@ const HomeBody = () => {
 
             <div className="buttons">
               <button className="visit-wellpath-btn">Visit WellPath</button>
-              <button className="view-the-code-btn">View the code</button>
+              <button className="view-the-code-btn">Source Code</button>
             </div>
           </div>
         </div>

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* HeroSection.scss */
+.hero-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  object-fit: cover;
+}
+.hero-image {
+  object-position: center;
+  object-fit: cover;
+}
+.hero-content {
+  position: absolute;
+  bottom: 0; /* Change this */
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%, 0); /* Change this */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgba($color: #ffffff, $alpha: 0.8);
+  font-weight: bold;
+  padding: 1rem;
+  white-space: nowrap; /* Prevents text from breaking into new lines */
+}
+
+.hero-content__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Mobile devices (portrait tablets and large phones, less than 768px) */
+@media only screen and (max-width: 767px) {
+  .hero-container {
+    display: none;
+  }
+}

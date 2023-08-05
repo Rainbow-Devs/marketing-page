@@ -1,0 +1,45 @@
+/* Footer.scss */
+
+.footer-container {
+  background-color: #eef2ff; 
+  color: #000000; 
+  text-align: center; 
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  margin-top: 1rem;
+}
+
+.footer-content {
+  max-width: 100vw; /* Set a maximum width for the content to keep it centered */
+  margin: 0 auto; /* Center the content horizontally within the footer */
+  line-height: 2rem;
+  width: fit-content;
+  text-decoration: none;
+  outline-style: none;
+  color: #000000;
+
+}
+.footer-container a {
+  outline-style: none;
+  text-decoration: none;
+  color: black; 
+}
+
+.footer-content a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.footer-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  width: 5rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+};

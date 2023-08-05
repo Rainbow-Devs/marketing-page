@@ -1,1 +1,8 @@
-@import './reset.scss';
+@import "./reset.scss";
+@import "../components/Navbar/Navbar.scss";
+@import "../components/HeroSection/HeroSection.scss";
+@import "../components/HomeBody/HomeBody.scss";
+
+body {
+    background-color: #FFFFFF;
+}

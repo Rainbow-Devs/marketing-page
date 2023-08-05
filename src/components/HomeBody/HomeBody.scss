@@ -1,0 +1,327 @@
+:root {
+  --gap-size: 2rem;
+  --section-padding: 1rem 2rem;
+  --section-width: 100%;
+  --section-margin: 1rem 3rem;
+  --button-padding: 0.5rem 1rem;
+  --button-margin: 0.5rem;
+  --project-bg-color: #eef2ff;
+  --visit-wellpath-btn-color: #454e9e;
+}
+
+.homepage-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 10%;
+  gap: var(--gap-size);
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-size);
+}
+
+.about-image {
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.about-content {
+  flex: 1;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-head {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-section {
+  display: flex;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  background-color: var(--project-bg-color);
+  line-height: 1.5rem;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.left {
+  gap: var(--gap-size);
+}
+
+.left h2,
+.right h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.left h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.left h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  list-style: disc;
+  line-height: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.visit-wellpath-btn,
+.view-the-code-btn,
+.join-us-btn {
+  outline: none;
+  border: 2px solid var(--visit-wellpath-btn-color);
+  padding: var(--button-padding);
+  border-radius: 5px;
+  margin: var(--button-margin);
+}
+
+.visit-wellpath-btn {
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.visit-wellpath-btn:hover {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+}
+
+.view-the-code-btn {
+  background-color: var(--project-bg-color);
+  color: var(--visit-wellpath-btn-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.view-the-code-btn:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.join-us-section {
+  background-color: #daf5e7;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: var(--section-padding);
+  border-radius: 5px;
+  line-height: 1.5rem;
+}
+
+.join-us-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-us-btn {
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
+  padding: var(--button-padding);
+  border-radius: 5px;
+  margin: var(--button-margin);
+  text-align: center;
+  text-decoration: none;
+  max-width: fit-content;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.join-us-btn:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.scrollTop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: auto;
+  height: 40px;
+  background-color: var(--visit-wellpath-btn-color);
+  color: white;
+  border: 2px solid var(--visit-wellpath-btn-color);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  padding: auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section,
+  .projects-section,
+  .join-us-section,
+  h1 {
+    flex-direction: column;
+    border-radius: 22px;
+  }
+
+  .left,
+  .right,
+  .about-image,
+  .about-content {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .projects-section .left {
+    order: 2;
+  }
+
+  .projects-section .right {
+    order: 1;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .visit-wellpath-btn {
+    display: flex;
+    outline: none;
+    border: 2px solid var(--visit-wellpath-btn-color);
+    background-color: var(--visit-wellpath-btn-color);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  .view-the-code-btn {
+    white-space: nowrap;
+  }
+
+  .join-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--section-padding);
+    border-radius: 22px;
+    line-height: 1.5rem;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .join-us-btn {
+    margin-top: 1rem;
+    position: relative;
+    outline: none;
+    border: 2px solid var(--visit-wellpath-btn-color);
+    background-color: var(--visit-wellpath-btn-color);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    object-fit: contain;
+  }
+
+  .navbar-container {
+    border-radius: 0;
+    margin: 0 auto;
+    top: 5;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .about-content h2,
+  .join-us-section h2 {
+    text-align: center; /* Center align the headings */
+  }
+
+  .project-head {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-content p,
+  .left p,
+  .text-container p {
+    text-align: left; /* Left align the body text */
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+
+.scrollTop:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 767px) {
+  .scrollTop {
+    display: none !important;
+  }
+}

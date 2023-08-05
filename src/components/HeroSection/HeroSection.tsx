@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import "./HeroSection.scss";
+import { HeroImage } from "../HeroImage/HeroImage";
 
-type Props = {}
+type Props = {};
 
-export default function HeroSection({}: Props) {
+function HeroSection({}: Props) {
   return (
-    <div>HeroSection</div>
-  )
+    <div className="hero-container">
+      <HeroImage />
+      <div className="hero-content">
+        <p className="hero-content__description">
+          Rainbow Devs is a community of LGBTQ+ developers
+        </p>
+      </div>
+    </div>
+  );
 }
+
+export default HeroSection;

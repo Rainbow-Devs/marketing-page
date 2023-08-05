@@ -1,19 +1,19 @@
-import * as React from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
-import './index.scss';
-import { HeroSection } from '../components/HeroSection';
-import { Navbar } from '../components/Navbar';
+import * as React from "react";
+import "../pages/index.scss"; // Import the global CSS file
+import Navbar from "../components/Navbar/Navbar";
+import HeroSection from "../components/HeroSection/HeroSection";
+import HomeBody from "../components/HomeBody/HomeBody";
+import Footer from "../components/Footer/Footer"; // Replace "path/to/Footer" with the actual path to your Footer component
 
-const IndexPage: React.FC<PageProps> = () => {
+const IndexPage: React.FC = () => {
   return (
     <main>
-      <p>Rainbow Devs</p>
       <Navbar />
       <HeroSection />
+      <HomeBody />
+      <Footer />
     </main>
   );
 };
 
 export default IndexPage;
-
-export const Head: HeadFC = () => <title>Rainbow Devs</title>;

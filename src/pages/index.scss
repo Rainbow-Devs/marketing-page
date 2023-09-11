@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import "./reset.scss";
 @import "../components/Navbar/Navbar.scss";
 @import "../components/HeroSection/HeroSection.scss";
 @import "../components/HomeBody/HomeBody.scss";
+:root {
+    --ff-global: "Inter", sans-serif;
+}
+
 
 body {
     background-color: #FFFFFF;
+    font-family: var(--ff-global);
+    font-weight: bold;
 }

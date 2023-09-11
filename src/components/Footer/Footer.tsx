@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         </div>
         <h2>Contact</h2>
         <p>
-          <a href="mailto:rainbowdevs22@gmail.com">rainbowdevs22@gmail.com</a>
+          <a href="mailto:hello@rainbowdevs.io">hello@rainbowdevs.io</a>
         </p>
         <p>
           &copy; {new Date().getFullYear()} Rainbow Devs. All rights reserved.

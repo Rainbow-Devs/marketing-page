@@ -67,7 +67,7 @@ const HomeBody = () => {
 
             <div className="buttons">
               <a
-                href="www.rainbowdevs.io"
+                href="rainbowdevs.io"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -66,8 +66,20 @@ const HomeBody = () => {
             </ul>
 
             <div className="buttons">
-              <button className="visit-wellpath-btn">Visit WellPath</button>
-              <button className="view-the-code-btn">Source Code</button>
+              <a
+                href="www.rainbowdevs.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="visit-wellpath-btn">Visit WellPath</button>
+              </a>
+              <a
+                href="https://github.com/Rainbow-Devs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="view-the-code-btn">Source Code</button>
+              </a>
             </div>
           </div>
         </div>
@@ -87,7 +99,13 @@ const HomeBody = () => {
             Once you join our Slack, you’ll have access to our resources and be
             able to contribute right away.
           </p>
-          <button className="join-us-btn">Join Our Slack</button>
+          <a
+            href="https://join.slack.com/t/rainbowdevs/shared_invite/zt-22yz1y9lx-dW4OHp2o1TwDCRnQbD5hTg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="join-us-btn">Join Our Slack</button>
+          </a>
         </div>
       </div>
       <button
